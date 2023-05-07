@@ -1,0 +1,13 @@
+name: hello
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  runs-on: [ ubuntu-latest ]
+  name: yay
+  steps:
+    - name: say hi
+      run: |
+        echo hello there
+      shell: bash
