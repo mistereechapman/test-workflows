@@ -1,14 +1,13 @@
-name: hello2
+name: My first Workflow
 
 on:
   workflow_dispatch:
   
 jobs:
-  hello-world:
+  first-steps:
     runs-on: [ ubuntu-latest ]
-    name: yay
+    name: my first job
     steps:
-      - name: say hi
+      - name: Greet the humans!
         run: |
-          echo hello there
-        shell: bash
+          echo "Welcome Human.... I come in peace..."
